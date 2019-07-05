@@ -5,7 +5,11 @@
         <BehaviorDescription name="behavior" src="." xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
-    <Resources />
+    <Resources>
+        <File name="choice_sentences" src="Aldebaran/choice_sentences.xml" />
+    </Resources>
     <Topics />
-    <IgnoredPaths />
+    <IgnoredPaths>
+        <Path src="marvin_view.jpg" />
+    </IgnoredPaths>
 </Package>

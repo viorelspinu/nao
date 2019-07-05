@@ -1,0 +1,6 @@
+Nao Tutorials:
+https://github.com/PaloAltoLibrary/NAO-Tutorials#Beginner-developers
+
+
+Google Assistant:
+https://github.com/conema/ZAGA
