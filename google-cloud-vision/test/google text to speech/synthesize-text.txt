@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": 400,
+    "message": "Could not find TTS server to handle request for application_id: 'cloud-tts' and trigger_application_id: '' and voice_request: language: \"ro\"\ngender: \"female\"\nname: \"cloud-ro-RO\"\n",
+    "status": "INVALID_ARGUMENT"
+  }
+}

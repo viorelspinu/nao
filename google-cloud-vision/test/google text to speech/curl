@@ -1,0 +1,14 @@
+curl -H "Content-Type: application/json; charset=utf-8" \
+  --data "{
+    'input':{
+      'text':'Acesta este un test in limba romana'
+    },
+    'voice':{
+      'languageCode':'ro',
+      'name':'ro-RO',
+      'ssmlGender':'FEMALE'
+    },
+    'audioConfig':{
+      'audioEncoding':'MP3'
+    }
+  }" "https://texttospeech.googleapis.com/v1/text:synthesize?key=AIzaSyBYQ6abjRtrhBsNCbY4vKqReGGi-lR9U7E" > synthesize-text.txt
