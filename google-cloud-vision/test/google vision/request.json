@@ -1,0 +1,18 @@
+{
+    "requests": [
+      {
+        "image": {
+          "source": {
+            "imageUri": "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg"
+          }
+        },
+        "features": [
+          {
+            "type": "LABEL_DETECTION",
+            "maxResults": 1
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,2 @@
+copy install.py on the robot, connect with ssh and run install.py on the robot
+make sure to supply the correct path to pkg

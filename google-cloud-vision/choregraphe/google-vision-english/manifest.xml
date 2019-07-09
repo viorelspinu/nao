@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="google_cloud_vision-1bc36a">
+ <names>
+  <name lang="en_US">google_cloud_vision</name>
+ </names>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path=".">
+   <nature></nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

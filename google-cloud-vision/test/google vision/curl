@@ -1,0 +1,1 @@
+curl -v -s -H "Content-Type: application/json"  https://vision.googleapis.com/v1/images:annotate\?key\=AIzaSyBYQ6abjRtrhBsNCbY4vKqReGGi-lR9U7E --data-binary @request.json
