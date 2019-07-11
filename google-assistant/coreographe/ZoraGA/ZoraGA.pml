@@ -26,5 +26,35 @@
         <Topic name="listening_enu" src="listening/listening_enu.top" topicName="listening" language="en_US" />
         <Topic name="generic_enu" src="generic/generic_enu.top" topicName="generic" language="en_US" />
     </Topics>
-    <IgnoredPaths />
+    <IgnoredPaths>
+        <Path src="" />
+        <Path src="stt/stt.dlg" />
+        <Path src="chooseAction/chooseAction.dlg" />
+        <Path src="bingoCommands/bingoCommands_enu.top" />
+        <Path src="chooseAction/chooseAction_enu.top" />
+        <Path src="generic/generic_enu.top" />
+        <Path src="sounds" />
+        <Path src="behavior_1/behavior.xar" />
+        <Path src="google-assistant.png" />
+        <Path src="generic/generic.dlg" />
+        <Path src="generic" />
+        <Path src="manifest.xml" />
+        <Path src=".metadata" />
+        <Path src="listening/listening_enu.top" />
+        <Path src="sounds/beep.wav" />
+        <Path src="ExampleDialog/ExampleDialog_enu.top" />
+        <Path src="ExampleDialog" />
+        <Path src="listening/listening.dlg" />
+        <Path src="bingoCommands" />
+        <Path src="listening" />
+        <Path src="sounds/ZoraThinking.wav" />
+        <Path src="stt/stt_enu.top" />
+        <Path src="ZoraGA.pml" />
+        <Path src="behavior_1" />
+        <Path src="chooseAction" />
+        <Path src="LICENSE" />
+        <Path src="ExampleDialog/ExampleDialog.dlg" />
+        <Path src="bingoCommands/bingoCommands.dlg" />
+        <Path src="stt" />
+    </IgnoredPaths>
 </Package>

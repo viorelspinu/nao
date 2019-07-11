@@ -136,7 +136,7 @@ class MyClass(GeneratedClass):
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                             <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
                             <Output name="marvinViewPicture" type="3" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
-                            <Parameter name="Resolution" inherits_from_parent="0" content_type="3" value="640 x 480" default_value="640 x 480" custom_choice="0" tooltip="Image resolution." id="4">
+                            <Parameter name="Resolution" inherits_from_parent="0" content_type="3" value="1280 x 960" default_value="640 x 480" custom_choice="0" tooltip="Image resolution." id="4">
                                 <Choice value="160 x 120" />
                                 <Choice value="320 x 240" />
                                 <Choice value="640 x 480" />
@@ -228,11 +228,11 @@ class MyClass(GeneratedClass):
         for item in rows:
             data=data + str(item['description']) + ","
         self.log(data)
-        #data_ro = self.doTranslatePost(data)
-        #self.log(data_ro)
-        #self.doTextToSpeech(data_ro)
-        #os.system("play /home/nao/google_speech.mp3")
-        self.tts.say(data)
+        data_ro = self.doTranslatePost(data)
+        self.log(data_ro)
+        self.doTextToSpeech(data_ro)
+        os.system("play /home/nao/google_speech.mp3")
+        #self.tts.say(data)
 
     def onInput_onStop(self):
         self.onUnload()  # it is recommended to reuse the clean-up as the box is stopped
