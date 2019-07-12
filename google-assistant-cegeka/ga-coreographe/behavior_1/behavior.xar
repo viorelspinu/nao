@@ -318,7 +318,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Audio recorder" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Python Script" id="3" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="789" y="171">
+                        <Box name="Python Script" id="3" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="774" y="105">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -342,7 +342,7 @@ class MyClass(GeneratedClass):
         files = {'file': open('/home/nao/recordings/microphones/sound_record.wav','rb')}
         values = {}
 
-        r = requests.post("http://192.168.0.102:5000/uploader", files=files, data=values)
+        r = requests.post("http://192.168.0.101:5000/uploader", files=files, data=values)
         open("/home/nao/ga-response.wav", 'wb').write(r.content)
         self.player.post.playFile("/home/nao/ga-response.wav")
         pass
