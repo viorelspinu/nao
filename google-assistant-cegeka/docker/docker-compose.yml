@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  ga_proxy_server:
+    build:      
+      context: ../ga-proxy-server
+    container_name: ga_proxy_server
+    volumes:
+      - .data/qa_proxy_server/:/root/.config/
+    ports:
+      - 5000:5000
