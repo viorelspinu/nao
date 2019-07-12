@@ -1,27 +1,30 @@
 ga-proxy-server installation
 ----
 
-0. follow "configure a developer project and account settings" and "register a device model" from here - https://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account
+__JUST_ONE_TIME__
+0. follow "configure a developer project and account settings" and "register a device model" from here - https://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account, then copy the credentials json file (from step "Download credentials") over the .client_credentials.json file
 
-0.a. copy the credentials json file (step "Download credentials") over ./client_credentials.json
 
 1. install docker and docker compose
 
-2. run "docker-compose build"
+2. run "docker-compose build" in the docker folder
 
 3. run "docker-compose up -d"
 
-AUTHORIZATION (only one time)
+4. you can see what is happening in container running "docker logs -f ga_proxy_server"
 
-4. run "docker exec -it ga_proxy_server bash" to get in the container
 
-5. run "./generate_credentials.sh"
+AUTHORIZATION STEPS (__JUST_ONE_TIME__)
 
-6. access the link in browser and follow the wizard
+1. run "docker exec -it ga_proxy_server bash" to get in the container
 
-7. copy paste the authorization code in the container prompt
+2. run "./generate_credentials.sh"
 
-8. your auth data is now saved in /root/.config/google-oauthlib-tool/credentials.json (in the container); this container path is persisted on the local machine volume (see docker-compose.yml), so next time you don't have to do these steps, the file will be there.
+3. access the link in browser and follow the wizard
 
-//END AUTHORIZATION
+4. copy paste the authorization code in the container prompt
+
+5. your auth data is now saved in /root/.config/google-oauthlib-tool/credentials.json (in the container); this path from container filesystem is persisted on the local machine disk as a volume (see docker-compose.yml), so next time you don't have to do these steps again, the json authorization file will be there.
+
+//END AUTHORIZATION STEPS
 
