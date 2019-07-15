@@ -1,9 +1,6 @@
 ga-proxy-server installation
 ----
 
-__JUST_ONE_TIME__
-0. follow "configure a developer project and account settings" and "register a device model" from here - https://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account, then copy the credentials json file (from step "Download credentials") over the .client_credentials.json file
-
 
 1. install docker and docker compose
 
@@ -14,7 +11,10 @@ __JUST_ONE_TIME__
 4. you can see what is happening in container running "docker logs -f ga_proxy_server"
 
 
+
 AUTHORIZATION STEPS (__JUST_ONE_TIME__)
+
+0. follow "configure a developer project and account settings" and "register a device model" from here - https://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account, then copy the credentials json file (from step "Download credentials") over the .client_credentials.json file
 
 1. run "docker exec -it ga_proxy_server bash" to get in the container
 
