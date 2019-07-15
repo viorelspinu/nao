@@ -15,7 +15,7 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                        <Box name="Tactile Head" id="1" localization="8" tooltip="Detect touch on head tactile sensor." x="213" y="239">
+                        <Box name="Tactile Head" id="1" localization="8" tooltip="Detect touch on head tactile sensor." x="304" y="177">
                             <bitmap>media/images/box/sensors/tactileHead.png</bitmap>
                             <script language="4">
                                 <content>
@@ -324,6 +324,9 @@ class MyClass(GeneratedClass):
                                 <content>
                                     <![CDATA[import requests
 
+LAPTOP_IP="192.168.0.105"
+
+
 class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self)
@@ -342,7 +345,7 @@ class MyClass(GeneratedClass):
         files = {'file': open('/home/nao/recordings/microphones/sound_record.wav','rb')}
         values = {}
 
-        r = requests.post("http://192.168.0.101:5000/uploader", files=files, data=values)
+        r = requests.post("http://" + LAPTOP_IP + ":5000/uploader", files=files, data=values)
         open("/home/nao/ga-response.wav", 'wb').write(r.content)
         self.player.post.playFile("/home/nao/ga-response.wav")
         pass
@@ -357,7 +360,7 @@ class MyClass(GeneratedClass):
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         </Box>
-                        <Box name="Python Script (2)" id="5" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="759" y="332">
+                        <Box name="Python Script (2)" id="5" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="791" y="300">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -390,7 +393,7 @@ class MyClass(GeneratedClass):
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         </Box>
-                        <Box name="Wipe Forehead" id="4" localization="8" tooltip="This box makes the robot wipe his forehead." x="736" y="457">
+                        <Box name="Wipe Forehead" id="4" localization="8" tooltip="This box makes the robot wipe his forehead." x="773" y="510">
                             <bitmap>media/images/box/movement/move.png</bitmap>
                             <script language="4">
                                 <content>
