@@ -5,6 +5,8 @@ services:
   ga_proxy_server:
     build:      
       context: ../ga-proxy-server
+    env_file:
+      - ./environment-variables.env        
     container_name: ga_proxy_server
     volumes:
       - .data/qa_proxy_server/:/root/.config/
