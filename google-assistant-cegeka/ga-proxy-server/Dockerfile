@@ -27,7 +27,7 @@ RUN chmod +x /push-to-talk.sh
 COPY ./server.py /server.py
 RUN chmod 644 ./server.py
 RUN apt-get -yq install dos2unix
-RUN dos2unix ./start.sh
+RUN dos2unix start.sh
 
 
 COPY ./start.sh /start.sh
