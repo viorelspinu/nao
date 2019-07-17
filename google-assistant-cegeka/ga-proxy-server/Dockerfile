@@ -30,5 +30,6 @@ RUN chmod 644 ./server.py
 COPY ./start.sh /start.sh
 RUN apt-get -yq install dos2unix
 RUN dos2unix start.sh
+RUN dos2unix push-to-talk.sh
 RUN chmod +x /start.sh
 ENTRYPOINT [ "/start.sh" ]
