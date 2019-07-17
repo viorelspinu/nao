@@ -15,7 +15,7 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                        <Box name="environment_setup" id="2" localization="8" tooltip="" x="127" y="71">
+                        <Box name="environment_setup" id="2" localization="8" tooltip="" x="179" y="13">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -235,8 +235,8 @@ class MyClass(GeneratedClass):
         data_ro = self.doTranslatePost(data)
         self.log(data_ro)
         self.doTextToSpeech(data_ro)
-        os.system("play /home/nao/google_speech.mp3")
-        #self.tts.say(data)
+        #os.system("play /home/nao/google_speech.mp3")
+        self.tts.say(data)
 
     def onInput_onStop(self):
         self.onUnload()  # it is recommended to reuse the clean-up as the box is stopped
@@ -248,7 +248,7 @@ class MyClass(GeneratedClass):
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         </Box>
-                        <Box name="Tactile Head" id="7" localization="8" tooltip="Detect touch on head tactile sensor." x="347" y="189">
+                        <Box name="Tactile Head" id="7" localization="8" tooltip="Detect touch on head tactile sensor." x="328" y="87">
                             <bitmap>media/images/box/sensors/tactileHead.png</bitmap>
                             <script language="4">
                                 <content>

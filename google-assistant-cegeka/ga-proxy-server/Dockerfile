@@ -25,6 +25,7 @@ COPY ./push-to-talk.sh /push-to-talk.sh
 COPY ./time-query.wav /time-query.wav
 RUN chmod +x /push-to-talk.sh
 COPY ./server.py /server.py
+RUN chmod 644 ./server.py
 
 
 COPY ./start.sh /start.sh

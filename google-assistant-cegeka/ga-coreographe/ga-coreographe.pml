@@ -7,5 +7,7 @@
     <Dialogs />
     <Resources />
     <Topics />
-    <IgnoredPaths />
+    <IgnoredPaths>
+        <Path src="sound_record.ogg" />
+    </IgnoredPaths>
 </Package>
